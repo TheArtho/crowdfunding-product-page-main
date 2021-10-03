@@ -1,0 +1,249 @@
+* {
+    margin:0;
+    color: hsl(0, 0%, 48%);
+    font-family: "Commissioner";
+    font-size: 16px;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+
+    z-index: -10;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 165px;
+    padding-right: 148px;
+    padding-top: 46px;
+}
+
+.header-menu>p {
+    margin-left: 17px;
+    margin-right: 17px;
+
+    color: white;
+}
+
+.container {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 22px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    width: 640px;
+    border: 2px solid #f6f6f6;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    padding: 45px;
+}
+
+.container.first {
+    margin-top: 240px;
+}
+
+.project-logo {
+    position: absolute;
+    border-radius: 100px;
+    top: -28px;
+    left: 50%;
+    margin-left: -28px;
+
+    height: 56px;
+}
+
+.project-intro {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.project-title {
+    font-size: 27px;
+    font-weight: 700;
+
+    color: black;
+}
+
+.project-line {
+    margin-top: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.space-between-wrapper.row {
+    justify-content: space-between;
+    width: 100%;
+}
+
+button.primary {
+    padding: 40px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+}
+
+button.bookmark {
+    position: relative;
+
+    padding: 40px;
+    padding-left: 70px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    background-color: #f4f4f4;
+    color: hsl(0, 0%, 48%);
+
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+}
+
+button.bookmark:before {
+    position: absolute;
+    content: "";
+    background: url("images/icon-bookmark.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 56px;
+
+    top: 0;
+    left: 0;
+}
+
+.statistics {
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.stat {
+    position: relative;
+    text-align: left;
+
+    margin-top: 10px;
+    margin-right: 90px;
+}
+
+.stat:after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 1px;
+
+    background-color: #f4f4f4;
+
+    right: -45px;
+}
+
+.stat:last-child:after {
+    display:none;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: 700;
+
+    color: black;
+}
+
+.stat p {
+    margin-top: 12px;
+}
+
+h2 {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+.paragraph {
+    margin-bottom: 33px;
+}
+
+.paragraph p {
+    margin-top: 44px;
+
+    text-align: left;
+}
+
+.reward-item {
+    padding: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+}
+
+.reward-description {
+    line-height: 30px;
+    text-align: left;
+}
+
+.reward-item .header {
+    margin-bottom: 33px;
+}
+
+.pledge-info {
+    color: hsl(176, 50%, 47%);
+}
+
+.reward-stock p {
+    margin-left: 12px;
+}
+
+.reward-item .footer {
+    margin-top: 33px;
+}
+
+.outof-stock {
+    border-color: #f4f4f4;
+}
+
+.outof-stock * {
+    opacity: 0.75;
+}
+
+button.transparent {
+    background-color: hsl(0, 0%, 48%);
+}
+
+button.transparent:hover {
+    cursor: default;
+}
